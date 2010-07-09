@@ -1,0 +1,55 @@
+h1. sql-ringojs-client
+
+This package provides a simple SQL database client implementation for which runs on RIngojs, by wrapping JDBC and the java.sql class library with convient access functions.
+
+It is loosely based on the Helma Database module.
+
+h2. Usage
+
+To connect:
+
+@var d = require('ngv/sql');@
+@var conn = d.connect('org.h2.Driver', 'jdbc:h2:/data/h2/mydb', 'myname', 's3cret');@
+
+To do a query: 
+
+@query(conn, 'select * from users').map(function(x) { return x['ID'] + "-" + x['FIRST_NAME']} );@
+
+(If you have a table called users with columns called ID and FIRST_NAME that you wanted to print out).
+
+
+h1. License
+
+sql-ringojs-client is distributed under the BSD license.
+
+Copyright (c) 2009, National Gallery of Victoria
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without 
+modification, are permitted provided that the following conditions 
+are met:
+
+  * Redistributions of source code must retain the above copyright notice, 
+this list of conditions and the following disclaimer.
+  * Redistributions in binary form must reproduce the above copyright notice, 
+this list of conditions and the following disclaimer in the documentation 
+and/or other materials provided with the distribution.
+
+Neither the name of the National Gallery of Victoria nor the names of its 
+contributors may be used to endorse or promote products derived from this 
+software without specific prior written permission.
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS 
+IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, 
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR 
+PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR 
+CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, 
+EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, 
+PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR 
+PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF 
+LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING 
+NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS 
+SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+
+
