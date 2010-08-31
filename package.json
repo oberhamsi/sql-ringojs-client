@@ -1,0 +1,8 @@
+{
+    "name": "sql-ringojs-client",
+    "version": "0.0.1",
+    "description": "JDBC SQL Client implemention",
+    "keywords": ["database", "jdbc", "sql"],
+    "author": "NGV (http://ngv.vic.gov.au/) <webmaster@ngv.vic.gov.au>"
+}
+
