@@ -3,6 +3,10 @@
     "version": "0.0.1",
     "description": "JDBC SQL Client implemention",
     "keywords": ["database", "jdbc", "sql"],
-    "author": "NGV (http://ngv.vic.gov.au/) <webmaster@ngv.vic.gov.au>"
+    "author": "NGV (http://ngv.vic.gov.au/) <webmaster@ngv.vic.gov.au>",
+    "main": "./lib/ngv/sql.js",
+    "directories": {
+    	"lib": "./lib"
+    }
 }
 
