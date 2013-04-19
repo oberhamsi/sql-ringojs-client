@@ -1,7 +1,7 @@
 var sql = require('sql-ringojs-client');
 
 var datasource = module.singleton('pooling-source', function() {
-	return sql.connect('jdbc:mysql://localhost/hello_world', 'com.mysql.jdbc.Driver', 'benchmarkdbuser', 'benchmarkdbpass');
+   return sql.connect('jdbc:mysql://localhost/hello_world', 'benchmarkdbuser', 'benchmarkdbpass');
 });
 
 // `close()` returns the connection to the pool.
